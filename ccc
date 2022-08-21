@@ -1,0 +1,329 @@
+ <header class="header">
+       <a href="#" class="logo">
+           <img src="image/logo.svg" alt="Logo">
+       </a>
+       <nav>
+           <ul class="nav">
+               <li class="nav-itam">
+                <a href="#" class="nav-link">Home</a> 
+               </li>
+               <li class="nav-itam">
+                <a href="#" class="nav-link">About Us</a> 
+               </li>
+               <li class="nav-itam">
+                <a href="#soon" class="nav-link">Shop</a> 
+               </li>
+               <li class="nav-itam">
+                <a href="#pololand" class="nav-link">Pololand</a> 
+               </li>
+               <li class="nav-itam">
+                <a href="#roadmap" class="nav-link">Roadmap</a> 
+               </li>
+               <li class="nav-itam">
+                <a href="#" class="nav-link">Contact Us</a> 
+               </li>
+               <li class="nav-itam nav-item--register">
+                <a href="#" class="nav-link nav-item--register">soon...</a> 
+               </li>
+           </ul>
+       </nav>
+   </header>
+
+   #182a45
+
+
+
+   <header class="head" id="head">
+    <nav class="na container">
+        <img src="image/logo.svg" class="na__logo" alt="Logo">
+
+        <div class="na__menu" id="na-menu">
+            <ul class="na__list">
+                <li class="na__item">
+                    <a href="#home" class="na__link active-link">
+                        <i class='bx bx-home-alt na__icon'></i>
+                        <span class="na__name">Home</span>
+                    </a>
+                </li>
+                
+                <li class="na__item">
+                    <a href="#about" class="na__link">
+                        <i class='bx bx-user na__icon'></i>
+                        <span class="na__name">About Us</span>
+                    </a>
+                </li>
+
+                <li class="na__item">
+                    <a href="#skills" class="na__link">
+                        <i class='bx bx-book-alt na__icon'></i>
+                        <span class="na__name">Shop</span>
+                    </a>
+                </li>
+
+                <li class="na__item">
+                    <a href="#portfolio" class="na__link">
+                        <i class='bx bx-briefcase-alt na__icon'></i>
+                        <span class="na__name">Pololand</span>
+                    </a>
+                </li>
+
+                <li class="na__item">
+                    <a href="#portfolio" class="na__link">
+                        <i class='bx bx-briefcase-alt na__icon'></i>
+                        <span class="na__name">Roadmap</span>
+                    </a>
+                </li>
+
+                <li class="na__item">
+                    <a href="#contactme" class="na__link">
+                        <i class='bx bx-message-square-detail na__icon'></i>
+                        <span class="na__name">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <img src="assets/img/perfil.png" alt="" class="na__img">
+    </nav>
+</header>
+
+
+
+
+
+<div class="page-backgraund">
+  <div class="wrapper">
+      <div class="form">
+          <div class="form-text">
+              <h1 class="form-text__tittle">
+               Subscribe
+              </h1>
+              <p class="form-text__description">
+               Join now with MARKO POLO to get the latest news and get on the WHITELIST.
+              </p>
+          </div>
+          <div class="form-letter">
+           <form class="form-letter" action="https://formsubmit.co/072c4ca410cfc54d4e30b049169ffd55" method="POST">
+               <input type="hidden" name="_captcha">
+               <input type="text" name="_honey" style="display:none">
+               <input type="hidden" name="_subject" value="New submission!">
+              <input type="email" class="form-letter__input" name="email" placeholder="Enter your email" required>
+              <button class="form-letter__btn" type="submit">Subscribe</button>
+           </form>
+          </div>
+      </div>
+
+
+
+
+
+
+:root {
+    --head-height: 3rem;
+  
+    /*========== Colors ==========*/
+    --first-color: orange;
+    --container-color: rgb(11, 19, 44);
+  
+    /*========== Font and typography ==========*/
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+  
+  @media screen and (min-width: 968px) {
+    :root {
+      --h1-font-size: 2.25rem;
+      --normal-font-size: 1rem;
+    }
+  }
+  
+  /*=============== BASE ===============*/
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  /*=============== REUSABLE CSS CLASSES ===============*/
+  .container {
+    max-width: 1020px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  /*=============== HEADER ===============*/
+  .head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--container-color);
+    z-index: var(--z-fixed);
+    transition: .4s;
+  }
+  
+  /*=============== NA ===============*/
+  .na {
+    height: var(--head-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .na__img {
+    width: 32px;
+    border-radius: 50%;
+  }
+  
+  .na__logo {
+    color: var(--title-color);
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .na__menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: var(--container-color);
+      box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+      width: 100%;
+      height: 4rem;
+      padding: 0 1rem;
+      display: grid;
+      align-content: center;
+      
+      transition: .4s;
+    }
+    .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+  
+  .na__list, 
+  .na__link {
+    display: flex;
+  }
+  
+  .na__link {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+    color: var(--title-color);
+    font-weight: 600;
+  }
+  
+  .na__list {
+    justify-content: space-around;
+  }
+  
+  .na__name {
+    font-size: var(--tiny-font-size);
+    /* display: none;*/ /* Minimalist design, hidden labels */
+  }
+  
+  .na__icon {
+    font-size: 1.5rem;
+  }
+  
+  /*Active link*/
+  .active-link {
+    position: relative;
+    color: var(--first-color);
+    transition: .3s;
+  }
+  
+  /* Minimalist design, active link */
+  /* .active-link::before{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    width: 4px;
+    height: 4px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+  } */
+  
+  /* Change background header */
+  .scroll-head {
+    box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+  }
+  
+  /*=============== MEDIA QUERIES ===============*/
+  /* For small devices */
+  /* Remove if you choose, the minimalist design */
+  @media screen and (max-width: 320px) {
+    .na__name {
+      display: none;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (min-width: 576px) {
+    .na__list {
+      justify-content: center;
+      column-gap: 3rem;
+    }
+  }
+  
+  @media screen and (min-width: 767px) {
+    body {
+      margin: 0;
+    }
+    .section {
+      padding: 7rem 0 2rem;
+    }
+    .na {
+      height: calc(var(--head-height) + 1.5rem); /* 4.5rem */
+    }
+    .na__img {
+      display: none;
+    }
+    .na__icon {
+      display: none;
+    }
+    .na__name {
+      font-size: var(--normal-font-size);
+      /* display: block; */ /* Minimalist design, visible labels */
+    }
+    .na__link:hover {
+      color: var(--first-color);
+    }
+  
+    /* First design, remove if you choose the minimalist design */
+    .active-link::before {
+      content: '';
+      position: absolute;
+      bottom: -.75rem;
+      width: 4px;
+      height: 4px;
+      background-color: var(--first-color);
+      border-radius: 50%;
+    }
+  
+    /* Minimalist design */
+    /* .active-link::before{
+        bottom: -.75rem;
+    } */
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 1024px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  

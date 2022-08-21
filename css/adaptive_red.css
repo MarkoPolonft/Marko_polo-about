@@ -1,0 +1,39 @@
+@media screen and (max-width: 640px) {
+    .page-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .page-list__item {
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    .page-link {
+        display: flex;
+        justify-content: left;
+    }
+    .viy {
+        flex-grow: 1;
+        max-width: 85%;
+      }
+
+}
+@media (max-width: 640px) {
+    .tittle {
+        font-size: 40px;
+        letter-spacing: 6px;
+    }
+    .tittle2 {
+        font-size: 40px;
+        letter-spacing: 6px;
+    }
+.footer-text {
+    font-size: 10px;
+}
+}
+@media (max-width: 640px) {
+    .soon-text {
+        letter-spacing: 6px;
+        font-size: 25px; 
+    }
+}
