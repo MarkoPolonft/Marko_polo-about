@@ -86,16 +86,13 @@ body {
   align-items: center;
 }
 .page-img1 {
-  height: 244px;
-  width: 217px;
+  max-height: 300px;
 }
 .page-img2 {
-  height: 244px;
-  width: 217px;
+  max-height: 300px;
 }
 .page-img3 {
-  height: 244px;
-  width: 217px;
+  max-height: 300px;
 }
 .page-tittle {
   display: flex;
