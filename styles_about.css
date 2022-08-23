@@ -86,16 +86,16 @@ body {
   align-items: center;
 }
 .page-img1 {
-  max-height: 244px;
-  max-width: 217px;
+  height: 244px;
+  width: 217px;
 }
 .page-img2 {
-  max-height: 244px;
-  max-width: 217px;
+  height: 244px;
+  width: 217px;
 }
 .page-img3 {
-  max-height: 244px;
-  max-width: 217px;
+  height: 244px;
+  width: 217px;
 }
 .page-tittle {
   display: flex;
